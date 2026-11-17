@@ -1,1 +1,7 @@
-<html><body><h3>Tesla 授權完成，可以關閉此頁。</h3></body></html>
+<!doctype html><html lang="zh-TW"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1"><title>Tesla 授權完成</title></head>
+<body style="font-family:sans-serif;padding:24px">
+<h2>Tesla 授權完成 ✅</h2><p>請複製下面這串授權碼，貼到 Grok Bot 的加密輸入框（不要貼在聊天裡）：</p>
+<textarea id="c" rows="4" style="width:100%;font-size:16px" readonly></textarea>
+<p><button onclick="navigator.clipboard.writeText(document.getElementById('c').value);this.innerText='已複製'" style="font-size:18px;padding:8px 16px">複製授權碼</button></p>
+<script>var p=new URLSearchParams(location.search);document.getElementById('c').value=p.get('code')||('沒有授權碼：'+(p.get('error_description')||p.get('error')||''));</script>
+</body></html>
